@@ -25,3 +25,16 @@ function university_features() {
 
 add_action('after_setup_theme', 'university_features');
 
+add_filter( 'http_request_host_is_external', '__return_true' );
+
+
+
+//adds secret key to header for ninja form > api endpoint
+add_filter('ninja_forms_remote_request_args', function ($args) {
+
+  $args['headers'] = [
+      'x-webhook-secret' => getenv('WEBHOOK_SECRET'),
+  ];
+
+  return $args;
+});
