@@ -1495,3 +1495,146 @@ body.admin-bar .search-overlay {
   border-bottom: none;
   margin-bottom: 0;
 }
+
+/* Ninja Forms overrides */
+.nf-form-cont {
+  max-width: 800px;
+}
+.nf-form-cont .nf-form-fields-required {
+  display: none;
+}
+.nf-form-cont .nf-field-container {
+  margin-bottom: 1.75rem;
+}
+.nf-form-cont .name-container,
+.nf-form-cont .lastname-container {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  box-sizing: border-box;
+  margin-bottom: 1.75rem;
+}
+.nf-form-cont .name-container {
+  padding-right: 2.5%;
+}
+.nf-form-cont .lastname-container {
+  padding-left: 2.5%;
+}
+.nf-form-cont .city-container,
+.nf-form-cont .state-container,
+.nf-form-cont .zip-container {
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+  box-sizing: border-box;
+  margin-bottom: 1.75rem;
+}
+.nf-form-cont .city-container,
+.nf-form-cont .state-container {
+  padding-right: 2.5%;
+}
+.nf-form-cont .nf-field-label label {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+.nf-form-cont .ninja-forms-req-symbol {
+  color: #333;
+}
+.nf-form-cont input[type="text"],
+.nf-form-cont input[type="email"],
+.nf-form-cont input[type="tel"],
+.nf-form-cont input[type="number"],
+.nf-form-cont select,
+.nf-form-cont textarea {
+  width: 100%;
+  background-color: #f7f7f7;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+.nf-form-cont input[type="text"]:focus,
+.nf-form-cont input[type="email"]:focus,
+.nf-form-cont input[type="tel"]:focus,
+.nf-form-cont input[type="number"]:focus,
+.nf-form-cont select:focus,
+.nf-form-cont textarea:focus {
+  outline: none;
+  border-color: #0d3b66;
+}
+.nf-form-cont textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+.nf-form-cont .nf-fields-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+.nf-form-cont .nf-fields-wrap .nf-field-container {
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+.nf-form-cont .nf-field-description,
+.nf-form-cont .field-char-remaining,
+.nf-form-cont .charcount {
+  color: #888;
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+}
+.nf-form-cont .list-radio-wrap ul,
+.nf-form-cont .list-checkbox-wrap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nf-form-cont .list-radio-wrap ul li,
+.nf-form-cont .list-checkbox-wrap ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+.nf-form-cont .list-radio-wrap ul li label,
+.nf-form-cont .list-checkbox-wrap ul li label {
+  margin-left: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+.nf-form-cont .list-radio-wrap input[type="radio"],
+.nf-form-cont .list-checkbox-wrap input[type="checkbox"] {
+  accent-color: #0d6efd;
+  width: 16px;
+  height: 16px;
+}
+.nf-form-cont .nf-section-break {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+.nf-form-cont .submit-container {
+  margin-top: 1rem;
+}
+.nf-form-cont .submit-container .submit,
+.nf-form-cont button[type="submit"],
+.nf-form-cont input[type="submit"] {
+  background-color: #7c9a3b;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  padding: 14px 48px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.nf-form-cont .submit-container .submit:hover,
+.nf-form-cont button[type="submit"]:hover,
+.nf-form-cont input[type="submit"]:hover {
+  background-color: #6b8632;
+}
